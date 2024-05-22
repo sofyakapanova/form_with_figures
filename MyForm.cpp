@@ -1,5 +1,3 @@
-#pragma once
-
 #include "MyForm.h"
 
 using namespace System;
@@ -9,7 +7,7 @@ using namespace System::Windows::Forms;
 int main(array<String^>^ args) {
 	Application::SetCompatibleTextRenderingDefault(false);
 	Application::EnableVisualStyles();
-	MyForm::MyForm form;
+	MyForm::MyForm form;  // вместо первого MyForm название решения (как назван проект при создании)
 	Application::Run(% form);
 
 }
